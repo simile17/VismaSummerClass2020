@@ -1,23 +1,38 @@
-header { grid-area: header; }
-nav { grid-area: menu; }
-main { grid-area: main; }
-footer { grid-area: footer; }
+body {
+  min-height:100vh;
+  margin: 0;
+}
+
+header { 
+  grid-area: header; 
+}
+
+aside { 
+  grid-area: menu; 
+}
+
+main { 
+  grid-area: main; 
+}
+
+footer { 
+  grid-area: footer; 
+}
 
 .grid-container {
   display: grid;
   grid-template-areas:
-    'menu header header header'
-    'menu main main main'
-    'menu footer footer footer';
+    'menu header header header header'
+    'menu main main main main'
+    'menu footer footer footer footer';
   grid-gap: 10px;
+  grid-template-rows: 10% 1fr 10%;
   background-color: #2196F3;
-  padding: 10px;
 }
 
 .grid-container > div, nav {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
-  padding: 20px 0;
   font-size: 30px;
 }
 
@@ -48,4 +63,15 @@ ul > li {
   line-height: 75px;
   font-size: 30px;
   list-style: none;
+}
+
+.sidenav {
+  height: 100%;
+  width: 18%; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden; 
+  padding-top: 60px; 
 }
