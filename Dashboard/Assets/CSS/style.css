@@ -14,6 +14,7 @@ nav {
 
 main { 
   grid-area: main; 
+  margin-top: 60px;
 }
 
 footer { 
@@ -31,7 +32,7 @@ aside {
     'menu main main main main'
     'menu footer footer footer footer';
   grid-gap: 10px;
-  grid-template-columns: 19% 19% 19% 19% 19%;
+  grid-template-columns: 16% 20% 20% 20% 20%;
   grid-template-rows: 10% 1fr 10%;
   background-color: #ffffff;
 }
@@ -84,7 +85,7 @@ ul > li {
 
 .sidenav {
   height: 100%;
-  width: 18%; 
+  width: 16%; 
   position: fixed; 
   top: 0;
   left: 0;
@@ -149,6 +150,8 @@ table, th, td {
   background-color: #e9e9e9;
   position: fixed;
   z-index: 9;
+  top: 0;
+  width: 100%;
 }
 
 .header a {
@@ -168,13 +171,14 @@ table, th, td {
 }
 
 .search {
-  position: absolute;
   right: 5%;
   padding: 6px;
   border: none;
   margin-top: 12px;
   margin-right: 16px;
+  margin-left: 65%;
   font-size: 17px;
+  display: flex;
 }
 
 /*icons for top bar */
@@ -196,10 +200,4 @@ table, th, td {
 .icons-project {
   height: 30px;
   background-position: 0px 0px;
-}
-
-/*sticky nav bar*/
-.sticky {
-  top: 0;
-  width: 100%;
 }
