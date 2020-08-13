@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="style.css">
+      <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+   </head>
+   <body>
+    <main>
+          <form id="form" method="POST" action="http://localhost:3000/widgets">
+            <input name="title" type="text" placeholder="Title" required><br><br>
+            <input name="column" type="number" placeholder="Column Number"  required><br><br>
+            <label for="type">Choose a type:</label>
+            <select name="type" id="type">
+                <option value="userList">User List</option>
+                <option value="messages">Messages</option>
+            </select><br><br>
+            <label for="headerType">Choose a header type:</label> 
+            <select name="headerType" id="headerType">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select><br><br>
+            <textarea name="data" type="textArea" placeholder="Text"></textarea><br><br>
+            <button class="button" type="submit">Save</button>
+          </form>
+    </main>
+   </body>
+</html>

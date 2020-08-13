@@ -94,19 +94,11 @@ ul > li {
   padding-top: 60px; 
 }
 
-.welcome-widget > img {
+.widget > img {
   max-width: 100%;
 }
 
-.welcome-widget {
-  max-width: 500px;
-}
-
-.conversation-widget > img {
-  max-width: 100%;
-}
-
-.conversation-widget {
+.widget {
   max-width: 500px;
 }
 
@@ -129,19 +121,6 @@ p {
 }
 .animation:hover, .animation:focus, .animation:active {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-}
-
-/*table layout*/
-
-table {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
-}
-
-table, th, td {
-  border: 1px solid black;
-  padding: 3px 3px 3px 3px;
 }
 
 /*header layout*/
@@ -200,4 +179,18 @@ table, th, td {
 .icons-project {
   height: 30px;
   background-position: 0px 0px;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+button {
+	cursor: pointer;
+	padding: 10px 20px;
+  border: none;
+}
+
+.light-h2 {
+  color: #909399;
 }

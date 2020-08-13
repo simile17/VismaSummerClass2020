@@ -1,0 +1,33 @@
+{
+  "widgets": [
+    {
+      "id": 12345,
+      "column": 1,
+      "type": "userList",
+      "title": "test",
+      "headerType": "dark",
+      "data": [
+        {
+          "id": 12343,
+          "firstName": "Dracarys",
+          "lastName": "Dante",
+          "userName": "dracante"
+        }
+      ]
+    },
+    {
+      "id": 12345,
+      "column": 1,
+      "type": "messages",
+      "title": "test",
+      "headerType": "light",
+      "data": [
+        {
+          "id": 12344,
+          "author": "BS",
+          "message": "gerai sokam man patinka, noreciau daugiau, skauda raumenis, bet ka rasau"
+        }
+      ]
+    }
+  ]
+}
